@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SAÉ3.01</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body class="bg-white">
+  <header class="flex justify-between items-center gap-4 p-4 flex-col sm:flex-row sm:items-center">
+    <ul class="flex items-center gap-3 sm:gap-5 flex-wrap w-full sm:w-auto">
+      <li class="">
+        <img class="size-16 sm:size-20 md:size-24" src="./src/logo.png" alt="Dickies Logo" />
+      </li>
+      <li>
+        <button class="font-ibm-sans text-sm md:text-base hover:underline">
+          Nouveautés
+        </button>
+      </li>
+      <li>
+        <button class="font-ibm-sans text-sm md:text-base hover:underline">Homme</button>
+      </li>
+      <li>
+        <button class="font-ibm-sans text-sm md:text-base hover:underline">Femme</button>
+      </li>
+      <li>
+        <button class="font-ibm-sans text-sm md:text-base hover:underline">Enfant</button>
+      </li>
+      <li>
+        <button class="font-ibm-sans text-sm md:text-base hover:underline">Outlet</button>
+      </li>
+    </ul>
+    <ul class="flex items-center gap-4 sm:gap-5 p-2 sm:p-4">
+      <li>
+        <button class="" aria-label="Messagerie">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30" fill="none"
+            class="icon icon-dickies-chat">
+            <path
+              d="M21.5807 10.3874L19.3258 8.13251H10.6741L8.41919 10.3874V21.8675L12.7986 18.7972H19.3258L21.5807 16.5423V10.3874Z"
+              stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+          </svg>
+        </button>
+      </li>
+
+      <li>
+        <button class="header-actions__action header-actions__action--account desktop-only" aria-label="Compte"
+          data-account-opt-in-toggle-button="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30" fill="none">
+            <path d="M12.8072 14.0932H16.6447L18.5612 10.7041L16.6447 7.31959H12.8072L10.8906 10.7041L12.8072 14.0932Z"
+              stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+            <path d="M21.3464 22.6804V19.9848L18.1742 17.454H11.8258L8.65369 19.9848V22.6804" stroke="currentColor"
+              stroke-width="1.5" stroke-miterlimit="10"></path>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button class="header-actions__action header-actions__action--cart" aria-label="Panier"
+          data-dickies-cart-toggle-button="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30" fill="none">
+            <path
+              d="M7.52979 7.56609H9.37595L10.8137 10.5514L12.385 13.0382H20.4437L22.4685 9.05774L21.7479 7.56609H12.2553M10.5736 10.0529L12.0114 13.0382L13.4491 16.0235H20.9746"
+              stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
+            <path d="M21.5638 19.2972H19.7509L18.8445 20.8676L19.7509 22.4339H21.5638L22.4703 20.8676L21.5638 19.2972Z"
+              fill="currentColor"></path>
+            <path d="M14.2908 19.2972H12.4779L11.5714 20.8676L12.4779 22.4339H14.2908L15.1972 20.8676L14.2908 19.2972Z"
+              fill="currentColor"></path>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </header>
+
+  <main class="font-ibm-sans container mx-auto max-w-6xl px-4 md:px-8 lg:px-12 py-6">
+    <a href="#" class="text-sm underline-offset-2 hover:underline inline-block mb-4 text-gray-600">
+      ← Continuer mes achats
+    </a>
+
+    <h1 class="text-3xl md:text-4xl lg:text-[40px] leading-tight tracking-wide uppercase mb-6">
+      Votre panier
+    </h1>
+
+    <section class="grid gap-8 md:grid-cols-2 items-start">
+
+      <section class="space-y-6 min-w-0">
+        <article class="grid gap-6 sm:grid-cols-[220px_1fr]">
+          <figure class="bg-gray-100">
+            <img class="w-full h-auto object-cover" src="./src/veste.webp" alt="Veste De Coach Oakport" />
+          </figure>
+
+          <section class="flex flex-col gap-3">
+            <header class="flex items-start justify-between">
+              <h3 class="font-ibm-sans uppercase text-sm">Veste de coach Oakport</h3>
+
+              <form class="flex items-center text-[12px] border border-gray-300" onsubmit="return false;">
+                <button class="px-2 py-1 hover:bg-gray-50" aria-label="Diminuer">−</button>
+                <output class="px-2 py-1 font-ibm-sans">2</output>
+                <button class="px-2 py-1 hover:bg-gray-50" aria-label="Augmenter">+</button>
+              </form>
+            </header>
+
+            <p class="font-ibm-sans text-sm">150,00€</p>
+
+            <p class="text-xs uppercase text-gray-600"><span class="text-topbar">Couleur :</span> Beige</p>
+            <p class="text-xs uppercase text-gray-600"> <span class="text-topbar">Taille :</span> L</p>
+
+            <button class="mt-2 text-[12px] uppercase underline underline-offset-2 hover:opacity-80 w-fit">
+              Supprimer
+            </button>
+          </section>
+        </article>
+      </section>
+
+      <aside
+        class="w-full md:w-[360px] md:justify-self-end sticky top-6 border border-gray-200 p-4 sm:p-5 bg-white h-fit">
+        <header class="flex items-center justify-between text-[13px] mb-3">
+          <p class="uppercase">Sous-total</p>
+          <p class="font-ibm-mono">150,00€</p>
+        </header>
+
+        <p class="text-[11px] font-ibm-mono leading-snug text-topbar mb-4">
+          Les taxes et les frais de livraison sont calculés au moment du paiement.
+        </p>
+
+        <button
+          class="w-full py-3 bg-topbar text-bg uppercase tracking-wide text-sm border border-topbar transition-colors duration-200 hover:bg-bg hover:text-topbar">
+          Paiement
+        </button>
+
+        <section class="mt-4  p-3 ">
+          <figure class="flex items-center gap-2">
+            <img src="./src/paypal.png" alt="PayPal" class="h-5 w-auto" />
+            <figcaption class="text-[11px] text-gray-700 leading-snug">
+              Payez en 4x sans frais pour les achats de 30€ à 2 000€.
+            </figcaption>
+          </figure>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+
+
+
+  <footer class="flex bg-bgfooter mt-8">
+    <section class="container flex flex-col gap-5 md:gap-5 mx-auto p-5 md:p-8">
+      <p class="text-base sm:text-lg uppercase">Quality workwear since 1922</p>
+      <h2 class="text-2xl sm:text-3xl max-w-xl">Inscrivez-vous et obtenez 10% de réduction</h2>
+      <p class="max-w-xl text-sm sm:text-base">Obtenez un accès exclusif et des offres, plus 10% de réduction sur votre
+        première commande de
+        plus de 85€ (des
+        exclusions s'appliquent) pour vous remercier de vous être abonné.</p>
+      <button class="flex max-w-80 border px-3 gap-4 py-3.5 items-center justify-between">
+        Email
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-5 sm:size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+        </svg>
+      </button>
+      <label class="flex items-start sm:items-center gap-2 mt-2">
+        <input type="checkbox" class="h-4 w-4 accent-topbar cursor-pointer mt-1 sm:mt-0">
+        <span class="text-xs sm:text-sm max-w-sm">Je consens au traitement de mes données personnelles à des fins de
+          marketing basé
+          sur le
+          profil, comme décrit dans la politique de confidentialité de Dickies.</span>
+      </label>
+      <button
+        class="bg-black text-white px-6 py-3 max-w-50 uppercase text-sm font-ibm-sans hover:bg-gray-800 transition">
+        Continue
+      </button>
+      <ul class="flex list-none flex-wrap gap-3 ">
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10 2C7.8272 2 7.5552 2.00907 6.70187 2.048C5.85013 2.08693 5.26827 2.2224 4.75947 2.42027C4.22613 2.6208 3.7424 2.93547 3.3424 3.34293C2.93558 3.74247 2.62072 4.22586 2.41973 4.75947C2.22293 5.26827 2.08693 5.85067 2.048 6.7024C2.0096 7.5552 2 7.82667 2 10C2 12.1733 2.00907 12.4448 2.048 13.2981C2.08693 14.1499 2.2224 14.7317 2.42027 15.2405C2.6208 15.7739 2.93547 16.2576 3.34293 16.6576C3.74248 17.0644 4.22587 17.3793 4.75947 17.5803C5.26827 17.7776 5.85013 17.9131 6.70187 17.952C7.5552 17.9909 7.8272 18 10 18C12.1728 18 12.4448 17.9909 13.2981 17.952C14.1499 17.9131 14.7317 17.7776 15.2405 17.5797C15.7739 17.3792 16.2576 17.0645 16.6576 16.6571C17.0644 16.2575 17.3793 15.7741 17.5803 15.2405C17.7776 14.7317 17.9131 14.1499 17.952 13.2981C17.9909 12.4448 18 12.1728 18 10C18 7.8272 17.9909 7.5552 17.952 6.70187C17.9131 5.85013 17.7776 5.26827 17.5797 4.75947C17.3789 4.22563 17.064 3.74204 16.6571 3.3424C16.2575 2.93558 15.7741 2.62072 15.2405 2.41973C14.7317 2.22293 14.1493 2.08693 13.2976 2.048C12.4448 2.0096 12.1733 2 10 2ZM10 3.4416C12.136 3.4416 12.3893 3.4496 13.2331 3.488C14.0128 3.52373 14.4363 3.65333 14.7184 3.76373C15.0917 3.90827 15.3584 4.08213 15.6384 4.3616C15.9184 4.6416 16.0917 4.90827 16.2363 5.2816C16.3461 5.56373 16.4763 5.9872 16.512 6.76693C16.5504 7.61067 16.5584 7.864 16.5584 10C16.5584 12.136 16.5504 12.3893 16.512 13.2331C16.4763 14.0128 16.3467 14.4363 16.2363 14.7184C16.1082 15.0659 15.9039 15.3803 15.6384 15.6384C15.3803 15.904 15.0659 16.1083 14.7184 16.2363C14.4363 16.3461 14.0128 16.4763 13.2331 16.512C12.3893 16.5504 12.1365 16.5584 10 16.5584C7.86347 16.5584 7.61067 16.5504 6.76693 16.512C5.9872 16.4763 5.56373 16.3467 5.2816 16.2363C4.93411 16.1082 4.61974 15.9039 4.3616 15.6384C4.09609 15.3802 3.8918 15.0659 3.76373 14.7184C3.65387 14.4363 3.52373 14.0128 3.488 13.2331C3.4496 12.3893 3.4416 12.136 3.4416 10C3.4416 7.864 3.4496 7.61067 3.488 6.76693C3.52373 5.9872 3.65333 5.56373 3.76373 5.2816C3.90827 4.90827 4.08213 4.6416 4.3616 4.3616C4.6197 4.09602 4.93409 3.89172 5.2816 3.76373C5.56373 3.65387 5.9872 3.52373 6.76693 3.488C7.61067 3.4496 7.864 3.4416 10 3.4416Z"
+              fill="black" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.99998 12.6678C9.64946 12.6678 9.30235 12.5988 8.97849 12.4646C8.65463 12.3305 8.36037 12.1339 8.1125 11.886C7.86463 11.6381 7.66801 11.3439 7.53386 11.02C7.39971 10.6962 7.33067 10.349 7.33067 9.99851C7.33067 9.64797 7.39971 9.30086 7.53386 8.977C7.66801 8.65314 7.86463 8.35888 8.1125 8.11101C8.36037 7.86314 8.65463 7.66651 8.97849 7.53237C9.30235 7.39822 9.64946 7.32918 9.99998 7.32918C10.708 7.32918 11.3869 7.61041 11.8875 8.11101C12.3881 8.6116 12.6694 9.29056 12.6694 9.99851C12.6694 10.7065 12.3881 11.3854 11.8875 11.886C11.3869 12.3866 10.708 12.6678 9.99998 12.6678ZM9.99998 5.88651C8.90943 5.88651 7.86353 6.31974 7.09238 7.09089C6.32123 7.86204 5.888 8.90794 5.888 9.99851C5.888 11.0891 6.32123 12.135 7.09238 12.9061C7.86353 13.6773 8.90943 14.1105 9.99998 14.1105C11.0906 14.1105 12.1365 13.6773 12.9076 12.9061C13.6788 12.135 14.112 11.0891 14.112 9.99851C14.112 8.90794 13.6788 7.86204 12.9076 7.09089C12.1365 6.31974 11.0906 5.88651 9.99998 5.88651ZM15.3083 5.81184C15.3083 6.06963 15.2059 6.31687 15.0236 6.49915C14.8413 6.68144 14.5941 6.78384 14.3363 6.78384C14.0785 6.78384 13.8313 6.68144 13.649 6.49915C13.4667 6.31687 13.3643 6.06963 13.3643 5.81184C13.3643 5.55405 13.4667 5.30682 13.649 5.12454C13.8313 4.94225 14.0785 4.83984 14.3363 4.83984C14.5941 4.83984 14.8413 4.94225 15.0236 5.12454C15.2059 5.30682 15.3083 5.55405 15.3083 5.81184Z"
+              fill="black" />
+          </svg></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path
+              d="M10 2C5.58172 2 2 5.60486 2 10.0517C2 14.0582 4.90753 17.3812 8.7148 18V13.2148H6.57194V10.7168H8.7148V8.81292C8.7148 6.64708 9.97476 5.45073 11.9025 5.45073C12.8259 5.45073 13.7917 5.61951 13.7917 5.61951V7.74619H12.7275C11.6791 7.74619 11.3522 8.41235 11.3522 9.09575V10.7168H13.6929L13.3187 13.2148H11.3522V17.9888C15.1265 17.3422 18 14.0347 18 10.0517C18 5.60486 14.4183 2 10 2Z"
+              fill="black" />
+          </svg></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.8367 6.589C17.8367 6.589 17.6805 5.41306 17.1997 4.8967C16.5906 4.21757 15.9085 4.21322 15.5967 4.17381C13.3595 4 9.99923 4 9.99923 4H9.99338C9.99338 4 6.63468 4 4.3962 4.17381C4.08315 4.2144 3.40203 4.21721 2.79315 4.8967C2.3121 5.41306 2.15922 6.589 2.15922 6.589C2.15922 6.589 2 7.96895 2 9.35182V10.6449C2 12.0249 2.15912 13.4076 2.15912 13.4076C2.15912 13.4076 2.31531 14.5836 2.79305 15.1008C3.40193 15.7799 4.20214 15.7579 4.55935 15.8303C5.84023 15.9607 10.0003 16 10.0003 16C10.0003 16 13.3634 15.9937 15.6007 15.8231C15.9138 15.7837 16.5946 15.7797 17.2038 15.1002C17.6848 14.5838 17.8407 13.4066 17.8407 13.4066C17.8407 13.4066 18 12.0266 18 10.6439V9.35089C17.9968 7.97095 17.8376 6.58818 17.8376 6.58818L17.8367 6.589ZM8.34194 12.2137V7.41896L12.6641 9.82432L8.34194 12.2137Z"
+              fill="black" />
+          </svg></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path
+              d="M16 6.2953C14.0808 6.17381 12.9721 4.98931 12.7374 3L10.4307 3.00753V11.375C10.7796 15.8396 6.59218 15.1638 6.26484 12.8784C6.09809 11.6863 6.69717 11.0029 7.76719 10.6461C7.92005 10.594 8.07909 10.5476 8.23967 10.5066C8.45274 10.4521 8.66736 10.4074 8.87581 10.3727V8.01131C4.08003 8.17838 3.16133 12.4836 4.65595 14.9285C6.97819 18.7325 12.7683 17.0772 12.7683 11.7622V7.58612C13.9063 8.26944 14.8852 8.63389 16 8.52767V6.2953Z"
+              fill="black" />
+          </svg></li>
+        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3 8.11046C3 4.92551 5.51173 2 10.2426 2C14.0452 2 17 4.49559 17 7.83199C17 11.3121 14.6177 14.1125 11.3122 14.1125C10.2013 14.1125 9.15748 13.5809 8.8004 12.9529C8.8004 12.9529 8.25068 14.8807 8.11705 15.3534C7.86962 16.2301 7.20206 17.3296 6.75436 18C6.49877 17.9271 6.25144 17.8378 6.00421 17.7485C5.90888 16.9499 5.82301 15.7285 6.04332 14.859C6.24231 14.0714 7.3287 9.83981 7.3287 9.83981C7.3287 9.83981 7.00072 9.23476 7.00072 8.34114C7.00072 6.93682 7.8839 5.88903 8.98381 5.88903C9.91927 5.88903 10.3703 6.53605 10.3703 7.31122C10.3703 7.86537 10.1259 8.59443 9.86853 9.36182C9.72334 9.7948 9.57405 10.24 9.46227 10.6729C9.20387 11.6783 10.0095 12.4981 11.0853 12.4981C13.0334 12.4981 14.5309 10.6056 14.5309 7.87433C14.5309 5.45679 12.6456 3.76627 9.95299 3.76627C6.83461 3.76627 5.00416 5.92126 5.00416 8.14852C5.00416 9.0161 5.36669 9.94661 5.8199 10.453C5.90928 10.5532 5.92233 10.6406 5.89577 10.7424C5.8454 10.9357 5.75768 11.264 5.68826 11.5238C5.64319 11.6925 5.60584 11.8323 5.59141 11.8876C5.54377 12.0729 5.43245 12.1113 5.22506 12.0224C3.85579 11.4352 3 9.59166 3 8.11046Z"
+              fill="black" />
+          </svg></li>
+      </ul>
+
+    </section>
+
+    <section class="flex flex-col md:flex-row w-full">
+      <ul class="flex flex-col gap-1 p-5 flex-1">
+        <li>
+          <h3 class="uppercase font-ibm-sans text-base sm:text-lg pb-2">
+            Produits emblématiques
+          </h3>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Pantalon de travail 874</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Pantalon de travail 873</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Pantalon de travail 872</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Pantalon De travail Double Knee</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Salopettes</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Veste Eisenhower</a>
+        </li>
+      </ul>
+
+      <ul class="flex flex-col gap-1 p-5 flex-1">
+        <li>
+          <h3 class="uppercase font-ibm-sans text-base sm:text-lg pb-2">
+            homme
+          </h3>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Veste d'hiver</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Sweatshirts et Sweats à Capuche</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Pulls et Maille</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Polaires</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Chaussettes</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Vêtements de Travail</a>
+        </li>
+      </ul>
+
+      <ul class="flex flex-col gap-1 p-5 flex-1">
+        <li>
+          <h3 class="uppercase font-ibm-sans text-base sm:text-lg pb-2">
+            femme
+          </h3>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Veste d'hiver</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Sweatshirts et Sweats à Capuche</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Pulls et Maille</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Polaires</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Chaussettes</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Vêtements de Travail</a>
+        </li>
+      </ul>
+
+      <ul class="flex flex-col gap-1 p-5 flex-1">
+        <li>
+          <h3 class="uppercase font-ibm-sans text-base sm:text-lg pb-2">
+            aide
+          </h3>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">FAQs</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Conditions générales de livraison</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Politique de retour</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Méthode de paiement</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Contactez-nous</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm font-ibm-sans hover:underline">Conditions de vente</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+</body>
+
+</html>

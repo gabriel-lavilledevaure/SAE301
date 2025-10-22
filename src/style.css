@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import "tailwindcss";
+
+/* Exposition des tokens à Tailwind (utilisation via classes arbitraires) */
+@theme inline {
+  /* Polices exposées à Tailwind */
+  --font-ibm-sans: var(--font-sans);
+  --font-ibm-mono: var(--font-mono);
+
+  /* Alias sémantiques de couleurs */
+  --color-bg: var(--clr-white);
+  --color-fg: var(--clr-grey-1);
+
+  --color-primary: var(--clr-blue-1);
+  --color-primary-600: var(--clr-blue-2);
+  --color-accent: var(--clr-red);
+  --color-muted: var(--clr-grey-3);
+  --color-border: var(--clr-grey-4);
+  --color-bgfooter: var(--clr-beige);
+
+  --color-topbar: var(--clr-black);
+  --color-header: var(--clr-white);
+
+  --background-image-bgveste:
+    linear-gradient(
+      to top,
+      --alpha(var(--clr-black) / 0.25),
+      --alpha(var(--clr-black) / 0.25)
+    ),
+    var(--img-backgroundveste);
+
+  --background-image-bgtshirt:
+    linear-gradient(
+      to top,
+      --alpha(var(--clr-black) / 0.25),
+      --alpha(var(--clr-black) / 0.25)
+    ),
+    var(--img-backgroundtshirt);
+
+  --background-image-bgpant:
+    linear-gradient(
+      to top,
+      --alpha(var(--clr-black) / 0.25),
+      --alpha(var(--clr-black) / 0.25)
+    ),
+    var(--img-backgroundpant);
+}
+
+@layer base {
+  :root {
+    /* ===== Palette (tes couleurs) ===== */
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+
+    --clr-blue-1: #007aff;
+    --clr-blue-2: #204387;
+
+    --clr-grey-1: #1a1a1a;
+    --clr-grey-2: #757575;
+    --clr-grey-3: #848484;
+    --clr-grey-4: #e1e1e1;
+
+    --clr-red: #b42318;
+    --clr-brown: #622714;
+    --clr-beige: #d9c9ad;
+
+    /* ===== Polices (correctif) ===== */
+    --font-sans: "IBM Plex Sans", sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+
+    --img-backgroundveste: url("./backgroundveste.webp");
+    --img-backgroundpant: url("./backgroundpant.webp");
+    --img-backgroundtshirt: url("./backgroundtshirt.webp");
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-fg);
+    background: var(--color-bg);
+  }
+}
