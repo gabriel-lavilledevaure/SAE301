@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SAÉ3.01</title>
-  <link rel="stylesheet" href="./src/style.css" />
+  <link rel="stylesheet" href="../src/style.css" />
 </head>
 
 <body class="bg-white">
@@ -13,7 +13,9 @@
   <header class="flex justify-between items-center gap-4 p-4 flex-col sm:flex-row sm:items-center">
     <ul class="flex items-center gap-3 sm:gap-5 flex-wrap w-full sm:w-auto">
       <li class="">
-        <img class="size-16 sm:size-20 md:size-24" src="./public/logo.png" alt="Dickies Logo" />
+        <a href="../index.html">
+
+          <img class="size-16 sm:size-20 md:size-24" src="../public/logo.png" alt="Dickies Logo" /> </a>
       </li>
       <li>
         <button class="font-ibm-sans text-sm md:text-base hover:underline">
@@ -35,18 +37,18 @@
     </ul>
     <ul class="flex items-center gap-4 sm:gap-5 p-2 sm:p-4">
       <li>
-        <button class="" aria-label="Messagerie">
+        <a class="" aria-label="Messagerie">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30" fill="none"
             class="icon icon-dickies-chat">
             <path
               d="M21.5807 10.3874L19.3258 8.13251H10.6741L8.41919 10.3874V21.8675L12.7986 18.7972H19.3258L21.5807 16.5423V10.3874Z"
               stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path>
           </svg>
-        </button>
+        </a>
       </li>
 
       <li>
-        <button class="header-actions__action header-actions__action--account desktop-only" aria-label="Compte"
+        <a class="header-actions__action header-actions__action--account desktop-only" aria-label="Compte"
           data-account-opt-in-toggle-button="">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30" fill="none">
             <path d="M12.8072 14.0932H16.6447L18.5612 10.7041L16.6447 7.31959H12.8072L10.8906 10.7041L12.8072 14.0932Z"
@@ -54,10 +56,10 @@
             <path d="M21.3464 22.6804V19.9848L18.1742 17.454H11.8258L8.65369 19.9848V22.6804" stroke="currentColor"
               stroke-width="1.5" stroke-miterlimit="10"></path>
           </svg>
-        </button>
+        </a>
       </li>
       <li>
-        <button class="header-actions__action header-actions__action--cart" aria-label="Panier"
+        <a class="header-actions__action header-actions__action--cart" aria-label="Panier" href="./panier.html"
           data-dickies-cart-toggle-button="">
           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30" fill="none">
             <path
@@ -68,7 +70,7 @@
             <path d="M14.2908 19.2972H12.4779L11.5714 20.8676L12.4779 22.4339H14.2908L15.1972 20.8676L14.2908 19.2972Z"
               fill="currentColor"></path>
           </svg>
-        </button>
+        </a>
       </li>
     </ul>
   </header>
@@ -99,10 +101,10 @@
           </a>
         </nav>
 
-        <button type="submit"
+        <a type="submit" href="./account.html"
           class="mt-2 mx-auto w-40 sm:w-48 md:w-56 bg-black text-white text-[12px] sm:text-[13px] py-2 sm:py-2.5 border border-black uppercase tracking-normal font-ibm-sans transition-colors duration-200 hover:bg-white hover:text-black">
           Se connecter
-        </button>
+        </a>
       </form>
     </section>
   </main>
